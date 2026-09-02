@@ -242,5 +242,4 @@ async def status(ctx):
     await ctx.send(embed=embed)
 
 # ===== KHỞI CHẠY =====
-keep_alive()
 bot.run(TOKEN)
