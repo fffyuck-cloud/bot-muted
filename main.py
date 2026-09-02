@@ -6,7 +6,7 @@ from keep_alive import keep_alive
 import os  # 👈 QUAN TRỌNG: Lấy token từ biến môi trường
 
 # ===== CẤU HÌNH =====
-TOKEN = os.getenv('DISCORD_TOKEN')  # 👈 Lấy token từ Secrets
+TOKEN = os.getenv('token')  # 👈 Lấy token từ Secrets
 MUTED_ROLE_NAME = 'Muted'
 LOG_CHANNEL_ID = None  # Sẽ tự động set bằng lệnh
 
@@ -243,4 +243,4 @@ async def status(ctx):
 
 # ===== KHỞI CHẠY =====
 keep_alive()
-bot.run(token)
+bot.run(TOKEN)
